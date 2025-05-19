@@ -1,0 +1,5 @@
+.diagonal-split {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(-15deg, #ff4d4d 50%, #4d94ff 50%);
+}
