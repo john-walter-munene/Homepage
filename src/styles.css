@@ -1,5 +1,292 @@
-.diagonal-split {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(-15deg, #ff4d4d 50%, #4d94ff 50%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles: Applies to all layouts */
+
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: oklch(60.9% 0.126 221.723);
+}
+
+header {
+    background: linear-gradient(-30deg, azure 53%, oklch(60.9% 0.126 221.723) 47%);
+    flex-direction: column;
+    height: 815px;
+  }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot-one, .project {
+  border-radius: 5px;
+}
+
+.headshot-one img,
+.headshot-two img {
+  padding-top: 40px;
+  object-fit: cover;
+}
+
+.introductory-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.socials  ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.socials ul:first-of-type {
+  margin-top: 15px;
+}
+
+li img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Section Two: Main */
+.work-showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.work-showcase h2 {
+  padding: 20px 10px 10px 10px;
+  font-size: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.3em 0.3em 1em rgba(104, 104, 104, 0.6);
+}
+
+.project-pic {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-pic p {
+  color: azure;
+  font-size: 50px;
+  width: 80%;
+}
+
+.project-details {
+  height: 150px;
+  width: 300px;
+  background-color: rgb(240, 245, 259);
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.headline h3 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.headline img {
+  width: 30px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.description {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(87, 87, 87);
+}
+
+.description p {
+  font-size: 19px;
+  font-weight: 250;
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.task-one {
+  background-color: blueviolet;
+}
+
+.task-two {
+  background-color: orange;
+}
+
+.task-three {
+  background-color: oklch(40.5% 0.101 131.063);
+}
+
+.task-four {
+  background-color: oklch(71.8% 0.202 349.761);
+}
+
+.task-five {
+  background-color: oklch(68.5% 0.169 237.323);
+}
+
+.task-six {
+  background-color: oklch(44.8% 0.119 151.328);
+}
+
+/* Footer section */
+footer {
+  height: 1000px;
+  margin-top: 40px;
+  color: azure;
+  width: inherit;
+}
+.contact-details {
+  background-color: oklch(60.9% 0.126 221.723);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ 
+.contact-card {
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.contact-card h2 {
+  text-align: center;
+  color: azure;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-card p {
+  text-align: start;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.in-touch, .address, .contact-info {
+  margin-bottom: 40px;
+}
+
+.in-touch {
+  font-weight: 500;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 400px) {
+    body {
+        /* background-color: #F09A9D; Red */
+      min-width: 330px;
+      }
+
+    .home-page header {
+      position: relative;
+    }
+
+    header h1 {
+      display: block;
+      color: azure;
+      font-size: 50px;
+      left: 3.4375rem;
+      top: 365px;
+      width: 170px;
+      position: absolute;
+    }
+
+    .headshot-one img {
+        width: 300px;
+        height: 500px;
+    }
+
+    .headshot-two img {
+      width: 400px;
+      height: 600px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .socials  ul {
+      gap: 30px;
+    }
+
+    header .socials li img {
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        /* background-color: #F5CF8E; Yellow */
+    }
+
+    .headshot-one img,
+    .headshot-two img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        /* background-color: #B2D6FF; Blue */
+    }
+
+    .headshot-one img,
+    .headshot-two img {
+        width: 500px;
+        height: 500px;
+    }
 }
