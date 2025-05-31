@@ -18,6 +18,9 @@ The goal of this project is to demonstrate mastery of semantic HTML, responsive 
 
 ![screenshot of homepage](./src/Designs/Application.png)
 
+## 🔗 Live Demo
+[View the site live](https://john-walter-munene.github.io/Homepage/)
+
 ## 🚀 Getting Started
 
 Clone this repo:
@@ -31,3 +34,5 @@ npm run build
 
 ## 🤝 Contributing
 Suggestions and improvements are welcome! Please open an issue or submit a pull request.
+
+Built with ❤️ by [John Walter Munene Njeru](https://www.linkedin.com/in/john-walter-munene-njeru-285909171/)
