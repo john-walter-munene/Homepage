@@ -1,7 +1,7 @@
 // import { format } from "date-fns";
 // import _ from 'lodash';
 
-
+import './styles.css';
 console.log("Template works.")
 
 // Function to log the current image used for art direction.
