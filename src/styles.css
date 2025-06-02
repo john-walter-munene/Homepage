@@ -190,6 +190,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: inherit;
 }
 
  
@@ -247,6 +248,10 @@ footer {
       position: absolute;
     }
 
+    footer {
+      height: 1100px;
+    }
+
     .headshot-one img {
         width: 300px;
         height: 500px;
@@ -279,6 +284,10 @@ footer {
 
     .contact-icon {
       display: none;
+    }
+
+    .contact-image {
+      align-self: flex-end;
     }
 }
 
