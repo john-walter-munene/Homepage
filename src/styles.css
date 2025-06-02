@@ -79,6 +79,7 @@ li img {
   justify-content: center;
   align-items: center;
   background-color: azure;
+  padding-bottom: 40px;
 }
 
 .work-showcase h2 {
@@ -110,8 +111,8 @@ li img {
 
 .project-pic p {
   color: azure;
-  font-size: 50px;
-  width: 80%;
+  font-size: 48px;
+  width: inherit;
 }
 
 .project-details {
@@ -252,7 +253,7 @@ footer {
 
     .headshot-two img {
       width: 400px;
-      height: 600px;
+      height: 602px;
     }
 
     h2 {
