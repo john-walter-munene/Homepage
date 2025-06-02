@@ -112,6 +112,7 @@ li img {
 .project-pic p {
   color: azure;
   font-size: 48px;
+  text-align: center;
   width: inherit;
 }
 
